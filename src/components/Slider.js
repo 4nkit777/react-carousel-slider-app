@@ -5,7 +5,8 @@ import { IoChevronForwardCircle, IoChevronBackCircle } from 'react-icons/io5'
 export default function Slider() {
 
     const [index, setIndex] = useState(0);
-    const [pics, setPics] = useState(data);
+    // eslint-disable-next-line
+    const [pics, setPics] = React.useState(data);
 
     useEffect(() => {
         const lastIndex = pics.length - 1;
